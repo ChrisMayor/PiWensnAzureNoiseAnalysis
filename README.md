@@ -40,7 +40,7 @@ In total:
 
 # Current image
 
-![alt text](https://github.com/ChrisMayor/PiWensnAzureNoiseAnalysis/blob/master/screenshots/current.JPG?raw=true)
+![current Screenshot](https://github.com/ChrisMayor/PiWensnAzureNoiseAnalysis/blob/main/screentshots/current.JPG?raw=true)
 
 
 
