@@ -38,7 +38,7 @@ In total:
 
 -- Work in Process --
 
-# Current image
+# Current screenshot
 
 ![current Screenshot](https://github.com/ChrisMayor/PiWensnAzureNoiseAnalysis/blob/main/screentshots/current.JPG?raw=true)
 
