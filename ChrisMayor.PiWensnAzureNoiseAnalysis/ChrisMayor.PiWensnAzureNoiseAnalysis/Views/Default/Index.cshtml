@@ -1,0 +1,23 @@
+﻿@model ChrisMayor.PiWensnAzureNoiseAnalysis.Model.ViewModel.DefaultViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>DefaultView</title>
+</head>
+<body>
+    <h1>Test Page</h1>
+
+    <h2>Last measured sound level: @Model.LastMeasurement db(A)</h2>
+    <h2>Last sound level was measured on: @Model.LastMeasurementDate.ToShortDateString() / @Model.LastMeasurementDate.ToShortTimeString()</h2>
+
+    <h2>Average sound level today: @Model.AverageSoundLevelToday db(A)</h2>
+
+</body>
+</html>

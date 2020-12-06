@@ -13,6 +13,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using ChrisMayor.PiWensnAzureNoiseAnalysis.Services;
 
 namespace ChrisMayor.PiWensnAzureNoiseAnalysis
 {
@@ -33,11 +34,13 @@ namespace ChrisMayor.PiWensnAzureNoiseAnalysis
 
             // Add our Config object so it can be injected
             services.Configure<NoiseConfig>(Configuration.GetSection("NoiseConfig"));
-
+            services.AddTransient<SoundLevelService>();
             services.AddDbContext<NoiseContext>(options => options.UseSqlServer(this.Configuration.GetConnectionString("NoiseDb")));
             services.AddControllers();
             services.AddSwaggerGen();
             services.AddApplicationInsightsTelemetry();
+            services.AddControllersWithViews();
+            services.AddRazorPages();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -65,6 +68,18 @@ namespace ChrisMayor.PiWensnAzureNoiseAnalysis
             {
                 endpoints.MapControllers();
             });
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapRazorPages();
+            });
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute("default", "{controller=Default}/{action=Index}");
+            });
+
+
         }
     }
 }
