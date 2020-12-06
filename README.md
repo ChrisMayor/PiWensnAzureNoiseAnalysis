@@ -30,8 +30,9 @@ The price for the cloud sound pressure level logger will be really cheap:
 - AzureSQL Instance (Size:Basic) ~ 5 €/Month
 - Azure App Service (for hosting API and Frontend) starting from 0 €
 
-Inital costs: 50 €
-Cost per Month: Starting vom ~5 €
+In total:
+* Inital costs: 50 €
+* Cost per Month: Starting vom ~5 €
 
 # How to setup
 
