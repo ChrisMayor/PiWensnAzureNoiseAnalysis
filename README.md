@@ -5,7 +5,7 @@
 
 Project target is, to provide an Azure cloud frontend for the cheap WS1361 Sound Pressure Level (SPL) Meter when it is in use in comination with the Raspberry Pi.
 
-The WS1361 is a cheap (but very accurate) Sound Pressure Level (SPL) Meter with an USB port. The software provided with the WS1361 is really but und nearly unusable, so it was reverse engineered in the past by some people, so it is now possible to connect the WS1361 to an USB port of the Raspberry Pi and use Python to read data from the WS1361.
+The WS1361 is a cheap (but very accurate) Sound Pressure Level (SPL) Meter which contains an USB port. The software provided with the WS1361 is nearly unusable, so it was reverse engineered in the past by some people, so it is now possible to connect the WS1361 to an USB port of the Raspberry Pi and use Python to read data from the WS1361.
 
 For further information please refer to https://github.com/mepster/wensn. Huge thanks and copyrights goes to mepster for providing the Python scripts for reading the data in his repository. 
 
